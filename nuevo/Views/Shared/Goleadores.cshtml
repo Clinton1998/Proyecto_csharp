@@ -1,0 +1,20 @@
+﻿
+@model List<Ejemplo_del.Models.JugadoresModelo>
+    <h2 style="color:black">Liga española</h2>
+<div>
+    <table class="table-bordered">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Goles</th>
+        </tr>
+        @foreach(var jug in Model)
+        {
+            <tr>
+                <td>@jug.NOMBRE</td>
+                <td>@jug.APELLIDO</td>
+                <td>@jug.GOLES</td>
+            </tr>
+        }
+    </table>
+</div>
